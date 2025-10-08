@@ -64,7 +64,7 @@ python main.py --mode eval --data-root <your data dir path> --eval-mode specific
 ```
 
 ## Acknowledgement
-- [MeMOTR]([https://github.com/fundamentalvision/Deformable-DETR](https://github.com/MCG-NJU/MeMOTR.git))
+- [MeMOTR](https://github.com/MCG-NJU/MeMOTR.git).
 - [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR)
 - [DAB DETR](https://github.com/IDEA-Research/DAB-DETR)
 - [MOTR](https://github.com/megvii-research/MOTR)
