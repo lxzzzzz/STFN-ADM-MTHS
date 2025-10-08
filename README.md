@@ -62,3 +62,10 @@ You can use this script to evaluate the trained model on the MTHS-SEU val set:
 ```shell
 python main.py --mode eval --data-root <your data dir path> --eval-mode specific --eval-model <filename of the checkpoint> --eval-dir ./outputs/mths_seu/ --eval-threads <your gpus num>
 ```
+
+## Acknowledgement
+- [MeMOTR]([https://github.com/fundamentalvision/Deformable-DETR](https://github.com/MCG-NJU/MeMOTR.git))
+- [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR)
+- [DAB DETR](https://github.com/IDEA-Research/DAB-DETR)
+- [MOTR](https://github.com/megvii-research/MOTR)
+- [TrackEval](https://github.com/JonathonLuiten/TrackEval)
