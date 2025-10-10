@@ -9,7 +9,6 @@ This paper presents Spatial-Temporal Fusion Network with Adaptive Decay Memory f
 
 
 ## Installation
-
 **a. Create a conda virtual environment and activate it.**
 ```shell
 conda create -n STFN python=3.8 -y
@@ -72,6 +71,28 @@ You can use this script to evaluate the trained model on the MTHS-SEU val set:
 ```shell
 python main.py --mode eval --data-root <your data dir path> --eval-mode specific --eval-model <filename of the checkpoint> --eval-dir ./outputs/mths_seu/ --eval-threads <your gpus num>
 ```
+
+## Results
+
+### Multi-Vehicle Tracking on the MTHS-SEU test set
+
+| Methods                  |  HOTA  |  DetA  |   AssA  | checkpoint |
+| ------------------------ | -----  | ------ | ------- |     --     |
+|STFN-ADM-MTHS             | 72.197 |	67.704 |	77.659 |     --     |
+
+
+### Multi-Vehicle Tracking on the UA-DETRAC test set
+
+| Methods                  |  HOTA  |  DetA  |   AssA  | checkpoint |
+| ------------------------ | ------ | ------ | ------- |     --     |
+| STFN-ADM-MTHS            | 52.024 |	47.735 |	56.933 |     --     |
+
+### Multi-Vehicle Tracking on the KITTI test set
+
+| Methods        | HOTA |  DetA |  AssA | checkpoint |
+| -------------  | ---- | ----- | ----- |     --     |
+| STFN-ADM-MTHS  | 76.81|	77.70 |	78.91 |     --     |
+
 
 ## Acknowledgement
 - [MeMOTR](https://github.com/MCG-NJU/MeMOTR.git).
