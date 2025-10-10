@@ -3,7 +3,6 @@ from torch.utils.data import Dataset, DataLoader, RandomSampler, SequentialSampl
 from typing import Tuple, Any, Union, Type, Dict, List
 from collections import defaultdict
 
-
 def collate_fn(batch):
     collated_batch = defaultdict(list)
     for data in batch:
