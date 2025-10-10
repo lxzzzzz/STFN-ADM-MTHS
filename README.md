@@ -1,6 +1,6 @@
 ## Method
 
-| ![space-1.jpg](asset/overview.png) | 
+| ![space-1.jpg](assets/overview.png) | 
 |:--:| 
 | ***Fig 2. Overview of STFN-ADM-MTHS framework. (The tracking process follows a detection and tracking query joint decoding paradigm, the red font shows improvements. The initial input is the image at frame i, tracking results O_tr^i is the final results. First, the image at frame i is processed through ResNet-50 and the Encoder structure to learn 2D features, where the encoder procedure is implemented according to the reference [5] and different colors represent different vehicles. During decoding, q_det^i and q_tr^i vectors are uniformly initialized and will further optimized, initialized according to reference [7], the Last frame newborn with detection query self-attention incorporates the output O_det^(i-1) from frame i−1 to update q_det^i for frame i, combining Repulsion loss produces O_tr^i, the specific details are provided in section A and B. Finally, combining the i-1 frame’s outputs O_tr^(i-1), Spatial-guided cross-temporal feature aggregation captures motion vibration, the specific details are provided in section C. Utilizing the memory of frame i and the vibration learning from the previous step, M_tr^i vectors is initialized and will further optimized, the adaptive decay memory structure updates the frame i+1’s memory and query M_tr^(i+1) and q_tr^(i+1), the specific details are provided in section D.)* |
 
