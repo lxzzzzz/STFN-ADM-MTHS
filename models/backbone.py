@@ -1,6 +1,4 @@
-# @Author       : Ruopeng Gao
-# @Date         : 2022/9/4
-# @Description  : 用于 backbone 的设计和搭建
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
